@@ -1,0 +1,45 @@
+.paradice {
+    overflow-x: hidden;
+}
+.paradice__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+}
+.paradice__img {
+    min-width: 410px;
+    max-height: 500px;
+}
+.paradice__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: -16px 70px;
+    width: 480px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    text-align: center;
+    color: #434364;
+
+}
+.card-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 72%;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+}
+.card-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.card-desc:not(:last-child) {
+    margin-bottom: 30px;
+}
+.paradice__card-button {
+}
+

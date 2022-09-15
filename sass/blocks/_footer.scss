@@ -1,0 +1,48 @@
+.footer {
+    position: relative;
+
+    padding: 37px 0px 43px 0px;
+    background-color: #828CDE;
+    text-align: center;
+    & .footer__desc, a, a::before {
+        font-family: 'Avenir Next';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+    }
+    & a:not(:last-child) {
+        padding-left: 21px;
+        position: relative;
+    }
+    & a:not(:last-child)::before {
+        content: '';
+        position: absolute;
+
+        background-color: #FFFFFF;
+        height: 16px;
+        width: 2px;
+        left: 10px;
+        bottom: 6px;
+    }
+}
+.footer__desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link-right {
+    margin-left: 1080px;
+    position: absolute;
+    padding: 37px 0px 43px 0px;
+    top: 0;
+}
+.footer__link {
+    transition: 0.3s all ease-in;
+}
+.footer__link:hover {
+    color: #FFDB80;
+}

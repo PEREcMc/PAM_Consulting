@@ -1,0 +1,29 @@
+.our-partners {
+    padding: 80px 130px;
+}
+.our-partners__title {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #434364;
+    margin-bottom: 60px;
+}
+.our-partners__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+.our-partners__item {
+    transition: all 0.2s ease;
+}
+.our-partners__item-img {
+    width: 180px;
+}
+.our-partners__item:hover {
+    transform: scale(1.1);
+}

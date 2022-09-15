@@ -1,0 +1,16 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1000px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .how-we-make__items-wrapper {
+        row-gap: 30px;
+    }
+
+    .footer__link-right {
+        margin-left: 840px;
+        padding: 37px 15px 43px 0px;
+    }
+}

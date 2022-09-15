@@ -1,0 +1,75 @@
+.why-choose {
+    padding: 80px 133px;
+    background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+}
+.why-choose__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-choose__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 580px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    text-align: center;
+    color: #434364;
+    margin-bottom: 60px;
+}
+.why-choose__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 111%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.why-choose__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.why-choose__items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    column-gap: 20px;
+}
+.why-choose__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    max-width: 280px;
+
+    &:hover {
+        .item__img {
+            transform: scale(1.2);
+        }
+    }
+}
+.item__img {
+    margin-bottom: 34px;
+    transition: transform 0.3s ease-in;
+}
+.item__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: #6D31D0;
+    margin-bottom: 4px;
+}
+.item__desc {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #434364;
+}

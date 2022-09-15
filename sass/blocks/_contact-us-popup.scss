@@ -1,0 +1,40 @@
+.contact-us__popup-overlay {
+}
+.fade {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+	background-color: rgba(140, 121, 145, 0.7);
+    overflow: hidden;
+}
+.contact-us__popup {
+    position: absolute;
+    top: 18%;
+    left: 27%;
+    width: 680px;
+    height: 248px;
+    padding: 60px 90px;
+    background: rgba(255, 235, 128, 0.5);
+    backdrop-filter: blur(500px);
+    border-radius: 60px;
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    text-align: center;
+    color: #434364;
+}
+.popup__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 114%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.popup__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,139 @@
+.who-we-are {
+    position: relative;
+    background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+}
+.who-we-are__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0px 130px;
+}
+.who-we-are__block {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    color: #FFFFFF;
+
+    max-width: 480px;
+    p, p {
+        margin-bottom: 30px;
+    }
+}
+.block__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 111%;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 447px;
+        height: 0px;
+        left: 0px;
+        top: 132px;
+        border: 2px solid #FDBFA3;
+        transform: rotate(180deg);
+    }
+}
+.block__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    color: #6D31D0;
+}
+.who-we-are__founder {
+    display: flex;
+    column-gap: 33px;
+    position: relative;
+    // max-width: 580px;
+    // max-height: 440px;
+    background: #FFFFFF;
+    opacity: 0.8;
+    box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 41px 0px 37px 0px;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        & img {
+            // box-shadow: 0px 0px 10px 10px rgba(130, 72, 224, 0.74);
+            border-radius: 20px;
+        }
+        & .desc__title {
+            font-size: 25px;
+        }
+        transform: scale(1.05);
+    }
+}
+.founder__img {
+    height: 400px;
+    width: 280px;
+    left: 20px;
+    top: 20px;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 20px 0px 57px 20px;
+
+    transition: all 0.3s ease-in-out;
+}
+.founder__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 44px;
+    margin-right: 46px;
+}
+.desc__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: #6D31D0;
+    margin-bottom: 15px;
+
+    transition: all 0.3s ease-in-out;
+}
+.desc__text {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #434364;
+    margin-bottom: 17px;
+}
+.desc__button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #6D31D0;
+}
+.button-contact {
+    background: #FFDB80;
+    box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
+    border-radius: 24px;
+
+    padding: 14px 27px;
+    transition: 0.3s all ease-in;
+}
+.button-contact:hover {
+    // background-color: #f5bd2f;
+    // color: #5611c5;
+
+    color: #FFDB80;
+    background: linear-gradient(90deg, #6D31D0 0%, #AB80EF 104.7%);
+    box-shadow: 0px 3.5px 35px rgba(255, 185, 175, 0.3);
+}

@@ -1,0 +1,22 @@
+.offer__service {
+    padding: 0px 5px;
+    border-radius: 10px;
+}
+.link-service {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    background-color: rgba(109, 49, 208, 0.5);
+    color: #FFDB80;
+    text-shadow: 0px 0px 80px #023F76;
+
+    transition: 0.3s all ease-in;
+}
+.link-service:hover {
+    background-color: rgba(85, 23, 184, 0.5);
+    color: #e9b738;
+}
