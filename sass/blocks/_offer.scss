@@ -12,7 +12,7 @@
     // width: 1440px;
     // height: 720px;
     
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease;
 }
 
 .offer__services {
@@ -98,6 +98,7 @@
     align-items: center;
     column-gap: 40px;
 
+    flex-wrap: wrap;
 }
 .cities-item {
     position: relative;

@@ -6,6 +6,10 @@
     align-items: center;
     column-gap: 28px;
 
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+    padding-left: 111px;
     padding-right: 71px;
     font-weight: 500;
     font-size: 16px;
@@ -38,7 +42,7 @@
 .services-menu__wrapper {
     position: absolute;
     top: 90px;
-    left: 450px;
+    left: calc(100vw/2 - 270px);
     width: 280px;
     max-height: 120px;
     background: #FFFFFF;

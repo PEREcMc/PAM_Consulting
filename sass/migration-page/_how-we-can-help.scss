@@ -1,0 +1,38 @@
+.how-we-can-help {
+    padding: 80px 0px;
+    background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+}
+.how-we-can-help__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title__how-we-can-help {
+}
+.how-we-can-help__desc {
+    max-width: 780px;
+    &:not(:last-child) {
+        margin-bottom: 60px; 
+    }   
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #434364;
+}
+.how-we-can-help__list {
+    display: inline-block;
+    & li {
+        list-style: disc;
+    }
+}
+.how-we-can-help__link {
+    color: #6D31D0;
+
+}
+.how-we-can-help__list-item {
+}

@@ -1,0 +1,41 @@
+.residency-in-cyprus {
+    padding: 80px 130px;
+}
+.residency-in-cyprus__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.residency-in-cyprus__desc {
+    width: 580px;
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    color: #434364;
+
+}
+.residency-in-cyprus__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 114%;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+.residency-in-cyprus__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+.residency-in-cyprus__list {
+    padding-left: 25px;
+    & li {
+        list-style: disc;
+    }
+}
+.residency-in-cyprus__list-item {
+}
+.residency-in-cyprus__image {
+    width: 580px;
+    height: 500px;
+}

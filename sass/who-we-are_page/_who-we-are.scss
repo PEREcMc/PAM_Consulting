@@ -1,0 +1,40 @@
+.offer__who-we-are {
+
+}
+.who-we-are__bg {
+    background-image: url('./../img/who-we-are-page/offer_team_image.png');
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.who-we-are__title {
+    position: absolute;
+    width: 239px;
+    height: 40px;
+    left: 230px;
+    top: 370px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 111%;
+    text-transform: uppercase;
+    color: #434364;
+}
+.who-we-are__desc-wrapper {
+    background: #6D31D0;
+    opacity: 0.8;
+    padding: 80px 330px;
+}
+.who-we-are__desc {
+    max-width: 780px;
+    margin: 0 auto;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: #FFFFFF;
+}

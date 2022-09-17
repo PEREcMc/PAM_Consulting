@@ -1,0 +1,38 @@
+.what-we-do {
+    padding: 80px 0px;
+}
+.what-we-do__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.what-we-do__desc {
+    font-family: 'Avenir Next';
+    font-style: normal;
+    color: #434364;
+
+    padding-left: 130px;
+    max-width: 710px;
+
+}
+.what-we-do__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 72%;
+    text-transform: uppercase;
+    
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.what-we-do__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+
+    max-width: 580px;
+}
+.what-we-do__image {
+    width: 710px;
+    height: 420px;
+}

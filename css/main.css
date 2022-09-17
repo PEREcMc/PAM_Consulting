@@ -37,6 +37,9 @@ img {
   display: block;
   max-width: 100%; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Avenir Next Cyr', sans-serif;
   font-weight: 400; }
@@ -61,9 +64,6 @@ body {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-.logo {
-  padding-right: 111px; }
-
 .nav {
   text-transform: uppercase; }
 
@@ -71,6 +71,9 @@ body {
   display: flex;
   align-items: center;
   column-gap: 28px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  padding-left: 111px;
   padding-right: 71px;
   font-weight: 500;
   font-size: 16px;
@@ -97,7 +100,7 @@ body {
 .services-menu__wrapper {
   position: absolute;
   top: 90px;
-  left: 450px;
+  left: calc(100vw/2 - 270px);
   width: 280px;
   max-height: 120px;
   background: #FFFFFF;
@@ -129,7 +132,7 @@ body {
   border-radius: 30px;
   background-color: #FFDB80;
   color: #6D31D0;
-  transition: 0.3s all ease-in; }
+  transition: 0.3s all ease; }
 
 .button-get-in-touch:hover {
   color: #FFDB80;
@@ -147,7 +150,7 @@ body {
   background-image: url("./../img/offers_1440/home1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.3s ease-in; }
+  transition: all 0.3s ease; }
 
 .offer__services {
   display: flex;
@@ -222,7 +225,8 @@ body {
 .cities-wrapper {
   display: flex;
   align-items: center;
-  column-gap: 40px; }
+  column-gap: 40px;
+  flex-wrap: wrap; }
 
 .cities-item {
   position: relative;
@@ -587,7 +591,7 @@ body {
   box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
   border-radius: 24px;
   padding: 14px 27px;
-  transition: 0.3s all ease-in; }
+  transition: 0.3s all ease; }
 
 .button-contact:hover {
   color: #FFDB80;
@@ -848,7 +852,7 @@ body {
   box-shadow: 0px 14px 23px rgba(28, 37, 44, 0.08);
   border-radius: 24px;
   padding: 14px 27px;
-  transition: 0.3s all ease-in; }
+  transition: 0.3s all ease; }
 
 .button-submit:hover {
   color: #FFDB80;
@@ -1021,8 +1025,9 @@ body {
 .footer__link-right {
   margin-left: 1080px;
   position: absolute;
-  padding: 37px 0px 43px 0px;
-  top: 0; }
+  padding: 37px 15px 43px 0px;
+  top: 0;
+  bottom: 0; }
 
 .footer__link {
   transition: 0.3s all ease-in; }
@@ -1067,6 +1072,9 @@ body {
   line-height: 150%;
   letter-spacing: 0.5px; }
 
+@media (min-width: 1500px) {
+  .block__title::after {
+    width: calc(100vw/2 - 277px); } }
 @media (max-width: 1024px) {
   .container {
     max-width: 1000px;
@@ -1078,6 +1086,183 @@ body {
 
   .footer__link-right {
     margin-left: 840px;
-    padding: 37px 15px 43px 0px; } }
+    position: absolute;
+    padding: 25px 15px 25px 0px;
+    bottom: 0; } }
+.who-we-are__bg {
+  background-image: url("./../img/who-we-are-page/offer_team_image.png");
+  height: 530px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.who-we-are__title {
+  position: absolute;
+  width: 239px;
+  height: 40px;
+  left: 230px;
+  top: 370px;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  text-transform: uppercase;
+  color: #434364; }
+
+.who-we-are__desc-wrapper {
+  background: #6D31D0;
+  opacity: 0.8;
+  padding: 80px 330px; }
+
+.who-we-are__desc {
+  max-width: 780px;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  color: #FFFFFF; }
+
+.what-we-do {
+  padding: 80px 0px; }
+
+.what-we-do__wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px; }
+
+.what-we-do__desc {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  color: #434364;
+  padding-left: 130px;
+  max-width: 710px; }
+
+.what-we-do__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 72%;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-bottom: 40px; }
+
+.what-we-do__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  max-width: 580px; }
+
+.what-we-do__image {
+  width: 710px;
+  height: 420px; }
+
+.our-values {
+  padding: 80px 130px;
+  background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%); }
+
+.our-values__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.items-wrapper__our-values {
+  row-gap: 20px; }
+
+.migration__bg {
+  background-image: url("./../img/migration-page/offer-image.png");
+  height: 530px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.migration__title {
+  position: absolute;
+  width: 326px;
+  height: 40px;
+  left: 190px;
+  top: 365px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111px;
+  color: #434364; }
+
+.residency-in-cyprus {
+  padding: 80px 130px; }
+
+.residency-in-cyprus__wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px; }
+
+.residency-in-cyprus__desc {
+  width: 580px;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  color: #434364; }
+
+.residency-in-cyprus__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 114%;
+  text-transform: uppercase;
+  margin-bottom: 34px; }
+
+.residency-in-cyprus__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px; }
+
+.residency-in-cyprus__list {
+  padding-left: 25px; }
+  .residency-in-cyprus__list li {
+    list-style: disc; }
+
+.residency-in-cyprus__image {
+  width: 580px;
+  height: 500px; }
+
+.invest-in-cyprus {
+  padding: 0px 130px; }
+
+.wrapper__invest-in-cyprus {
+  flex-direction: row-reverse; }
+
+.immigrating-to-cyprus {
+  padding: 80px 130px; }
+
+.how-we-can-help {
+  padding: 80px 0px;
+  background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%); }
+
+.how-we-can-help__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.how-we-can-help__desc {
+  max-width: 780px;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #434364; }
+  .how-we-can-help__desc:not(:last-child) {
+    margin-bottom: 60px; }
+
+.how-we-can-help__list {
+  display: inline-block; }
+  .how-we-can-help__list li {
+    list-style: disc; }
+
+.how-we-can-help__link {
+  color: #6D31D0; }
 
 /*# sourceMappingURL=main.css.map */
