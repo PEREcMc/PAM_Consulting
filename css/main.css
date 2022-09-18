@@ -1167,6 +1167,9 @@ body {
   flex-direction: column;
   justify-content: center; }
 
+.title__our-values {
+  height: 40px; }
+
 .items-wrapper__our-values {
   row-gap: 20px; }
 
@@ -1264,5 +1267,169 @@ body {
 
 .how-we-can-help__link {
   color: #6D31D0; }
+
+.family-relocation__bg {
+  background-image: url("./../img/family-relocation-page/offer-image.png");
+  height: 530px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.family-relocation__title {
+  position: absolute;
+  width: 360px;
+  height: 80px;
+  left: 129px;
+  top: 345px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  color: #434364; }
+
+.living-the-island {
+  padding: 80px 130px; }
+
+.child-friendly-community {
+  padding: 0px 130px; }
+
+.wrapper__child-friendly-community {
+  flex-direction: row-reverse; }
+
+.desc__child-friendly-community {
+  max-width: 570px; }
+
+.expat-in-cyprus {
+  padding: 80px 130px; }
+
+.how-we-can-help--family-relocation {
+  padding: 67px 130px 37px 130px;
+  background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%); }
+
+.how-we-can-help__wrapper--family-relocation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 70px; }
+
+.header__how-we-can-help {
+  margin-bottom: 86px; }
+
+.item__how-we-can-help {
+  max-width: 180px; }
+
+.title__how-we-can-help {
+  height: 70px; }
+
+.business-relocation__bg {
+  background-image: url("./../img/business-relocation/Business Relocation-image.png");
+  height: 530px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.business-relocation__title {
+  position: absolute;
+  width: 374px;
+  height: 40px;
+  left: 130.5px;
+  top: 365px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  color: #434364; }
+
+.business-friendly-environment {
+  padding: 80px 130px; }
+
+.wrapper__business-friendly-environment {
+  flex-direction: row-reverse; }
+
+.desc__business-friendly-environment {
+  max-width: 555px; }
+
+.quality-of-life-in-cyprus {
+  padding: 0px 130px; }
+
+.desc__quality-of-life-in-cyprus {
+  max-width: 570px; }
+
+.positive-economic-outlook {
+  padding: 80px 130px; }
+
+.wrapper__positive-economic-outlook {
+  flex-direction: row-reverse; }
+
+.desc__positive-economic-outlook {
+  max-width: 560px; }
+
+.how-we-can-help--business-relocation {
+  padding: 67px 130px 109px 130px;
+  background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%); }
+
+.title--different-height {
+  height: 40px; }
+
+.investment-opportunities__bg {
+  background-image: url("./../img/investment-opportunities-page/investment-opportunities-image.png");
+  height: 530px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.investment-opportunities__title {
+  position: absolute;
+  width: 280px;
+  height: 80px;
+  left: 230.5px;
+  top: 345px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  color: #434364; }
+
+.investing-in-real-estate {
+  padding: 80px 130px; }
+
+.wrapper__investing-in-real-estate {
+  flex-direction: row-reverse; }
+
+.desc__investing-in-real-estate {
+  max-width: 540px; }
+
+.list__investing-in-real-estate {
+  color: #6D31D0; }
+
+.investing-in-yachts {
+  padding: 0px 130px; }
+
+.text__investing-in-yachts span {
+  color: #6D31D0; }
+
+.starting-a-business {
+  padding: 80px 130px; }
+
+.wrapper__starting-a-business {
+  flex-direction: row-reverse; }
+
+.text__starting-a-business span {
+  color: #6D31D0; }
+
+.how-we-can-help--investment-opportunities {
+  padding: 67px 130px 91px 130px;
+  background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%); }
+
+.header__how-we-can-help--investment-opportunities {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #434364;
+  margin-bottom: 78px; }
 
 /*# sourceMappingURL=main.css.map */
