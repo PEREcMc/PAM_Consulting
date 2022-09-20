@@ -42,6 +42,7 @@ function changeSlide () {
                     offerTitle.innerText = 'Relocating to Cyprus'
                     offerText.innerText = `The captivating Mediterranean island of Cyprus has become a business haven with a flourishing expat community. The strategic location that grants networking opportunities and the stability of being in the EU offers entrepreneurs the abilities they need to thrive.`
                     offerText.style.maxWidth = '520px'
+                    offerButton.href = './migration.html'
                     break;
                 case 1:
                     slide.style.backgroundImage = 'url("./img/offers_1440/offer2_image.png")'
@@ -50,6 +51,7 @@ function changeSlide () {
                     offerText.innerText = `Real estate has become a flourishing type of investment
                     on the island, with an increasing number of people seeking to invest in residential and commercial property projects in Cyprus. With a confident and stable economic outlook, it is a great time to consider investing in Cyprus property.`
                     offerText.style.maxWidth = '440px'
+                    offerButton.href = './investment-opportunities.html'
                     break;
                 case 2:
                     slide.style.backgroundImage = 'url("./img/offers_1440/offer3_image.png")'
@@ -57,6 +59,7 @@ function changeSlide () {
                     offerTitle.innerText = 'Family Relocation'
                     offerText.innerText = `Globally known as one of the safest places to live in the world, Cyprus is the ideal location for families. The healthy lifestyle and family-friendly communities have much to offer to every member of your family.`
                     offerText.style.maxWidth = '534px'
+                    offerButton.href = './family-relocation.html'
                     break;
                 case 3:
                     slide.style.backgroundImage = 'url("./img/offers_1440/offer4_image.png")'
@@ -64,6 +67,7 @@ function changeSlide () {
                     offerTitle.innerText = 'Business Relocation'
                     offerText.innerText = `Cyprus has a lot to offer for business entrepreneurs who aim to reach for more and expand their business goals. The attractive tax benefits and office locations have transformed Cyprus into a country with endless business opportunities for everyone.`
                     offerText.style.maxWidth = '534px'
+                    offerButton.href = './business-relocation.html'
                     break;
                 case 4:
                     slide.style.backgroundImage = 'url("./img/offers_1440/offer5_image.png")'
@@ -71,6 +75,7 @@ function changeSlide () {
                     offerTitle.innerText = 'Investing in Yachts'
                     offerText.innerText = `Living on an island is an adventure that opens up a wide range of experiences and possibilities. Here, you can conquer the Mediterranean Sea by renting or owning a yacht as part of your investment plan.`
                     offerText.style.maxWidth = '450px'
+                    offerButton.href = './investment-opportunities.html'
                     break;
                 case 5:
                     slide.style.backgroundImage = 'url("./img/offers_1440/offer6_image.png")'
@@ -78,6 +83,7 @@ function changeSlide () {
                     offerTitle.innerText = 'Moving to Cyprus'
                     offerText.innerText = `Thousands of individuals and families from every part of the globe have immigrated to Cyprus after discovering their perfect place to call home. The island is now one of the most dominant destinations with huge expat communities.`
                     offerText.style.maxWidth = '534px'
+                    offerButton.href = './migration.html'
                     break;            
                 default:
                     break;

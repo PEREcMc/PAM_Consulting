@@ -1,0 +1,43 @@
+.disclaimer {
+    padding: 60px 330px;
+}
+
+.title__disclaimer {
+}
+.disclaimer__title {
+    position: relative;
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 111%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #434364;
+
+    margin-bottom: 60px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 380px;
+        height: 0px;
+        left: calc(50% - 380px/2 + (-2px));
+        top: calc(50% - 0px/2 + 30px);
+        border: 3px solid #FDBFA3;
+    }
+}
+.disclaimer__desc {
+    // min-width: 780px;
+
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #585779;
+}
+.desc__disclaimer {
+}

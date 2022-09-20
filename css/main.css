@@ -513,9 +513,6 @@ body {
   margin-bottom: 60px; }
 
 .ideal-location__map path:hover {
-  cursor: pointer;
-  transition: fill 0.2s ease; }
-.ideal-location__map rect:hover {
   cursor: pointer; }
 
 .ideal-location__wrapper-city {
@@ -702,9 +699,10 @@ body {
 
 .how-we-make__items-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 20px; }
+  column-gap: 20px;
+  row-gap: 20px; }
 
 .how-we-make__item {
   display: flex;
@@ -1513,5 +1511,40 @@ body {
   text-align: center;
   color: #434364;
   margin-bottom: 78px; }
+
+.disclaimer {
+  padding: 60px 330px; }
+
+.disclaimer__title {
+  position: relative;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 111%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #434364;
+  margin-bottom: 60px; }
+  .disclaimer__title:after {
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 0px;
+    left: calc(50% - 380px/2 + (-2px));
+    top: calc(50% - 0px/2 + 30px);
+    border: 3px solid #FDBFA3; }
+
+.disclaimer__desc {
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #585779; }
+
+.privacy-policy {
+  padding: 60px 330px; }
 
 /*# sourceMappingURL=main.css.map */

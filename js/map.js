@@ -12,40 +12,85 @@ const childSvg = mapSvg.childNodes;
 rectsArr = Array.from(rects)
 pathsArr = Array.from(paths);
 
-patchLed ();
+// pathLed ();
 
-function patchLed () {
+// function pathLed () {
+//     let fillpathEachElem = [];
+//     pathsArr.forEach( item => {
+//         const fillpath = item.getAttribute('fill');
+//         console.log(fillpath)
+//         const fillpathArr = new Array();
+//         fillpathArr.push(fillpath);
+//         // console.log(fillpathArr[0]);
+        
+//         // item.addEventListener('mouseover', () => {
+//         //     item.setAttribute('fill', 'red')
+//         // })
+//         // item.addEventListener('mouseout', () => {
+//         //     item.setAttribute('fill', fillpath)
+//         // })   
+//         const fillpathEachElem = fillpathArr[0]; 
+//     })
+//     return fillpathEachElem;
+
+// }
+
+function pathFill () {
+    fillpathArr = new Array();
+    let fillEachPath;
+
     pathsArr.forEach( item => {
-        const fillpath = item.getAttribute('fill');
+        let fillpath = item.getAttribute('fill');
+        fillpathArr.push(fillpath)
 
-        item.addEventListener('mouseover', () => {
-            item.setAttribute('fill', 'red')
+    })
+    // console.log(fillpathArr)
+
+    fillpathArr.forEach( fill => {
+        fillEachPath === fill;
+    })
+    return fillEachPath;
+}
+pathFill ();
+
+function rectMouseover (item) {
+    item.addEventListener('mouseover', () => {
+ 
+        pathsArr.forEach( item => {
+            item.setAttribute('fill', 'red');
         })
-        item.addEventListener('mouseout', () => {
-            item.setAttribute('fill', fillpath)
-        })     
+    })
+}
+function rectMouseout (item) {
+    item.addEventListener('mouseout', () => {
+    
+        pathsArr.forEach( item => {
+            
+            if (item.getAttribute('nicosia')) {
+                item.setAttribute('fill', '#434364');
+            }
+            if (item.getAttribute('larnaka')) {
+                item.setAttribute('fill', '#434364');
+            }
+            if (item.getAttribute('paphos')) {
+                item.setAttribute('fill', 'white');
+            }
+            if (item.getAttribute('limassol')) {
+                item.setAttribute('fill', 'white');
+            }
+        })
     })
 }
 
-
 rectsArr.forEach( item => {
     const fill = item.getAttribute('fill');
+    if(fill !== "url(#pattern2)") {
+        item.style.cursor = 'pointer';
 
-    // pathsArr.forEach( item => {
-    //     const fillpath = item.getAttribute('fill');
-    // })
+        rectMouseover(item);
+        rectMouseout(item);
+    }
 
-    // item.addEventListener('mouseover', () => {
-    //     pathsArr.forEach( item => {
-    //         item.setAttribute('fill', 'red')
-    //     })
-    // })
-
-    // item.addEventListener('mouseout', () => {
-    //     pathsArr.forEach( item => {
-    //         item.setAttribute('fill', fillpath)
-    //     })
-    // })
 
     item.addEventListener('click', () => {
         switch (fill) {

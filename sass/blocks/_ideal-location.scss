@@ -36,11 +36,10 @@
 .ideal-location__map {
     path:hover {
         cursor: pointer;
-        transition: fill 0.2s ease;
     }
-    rect:hover {
-        cursor: pointer;
-    }
+    // rect:hover {
+    //     cursor: pointer;
+    // }
 
 }
 .ideal-location__wrapper-city {
