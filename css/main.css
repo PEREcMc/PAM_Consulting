@@ -512,9 +512,6 @@ body {
   letter-spacing: 0.5px;
   margin-bottom: 60px; }
 
-.ideal-location__map path:hover {
-  cursor: pointer; }
-
 .ideal-location__wrapper-city {
   display: flex;
   flex-direction: column;

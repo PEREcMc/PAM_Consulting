@@ -12,52 +12,25 @@ const childSvg = mapSvg.childNodes;
 rectsArr = Array.from(rects)
 pathsArr = Array.from(paths);
 
-// pathLed ();
-
-// function pathLed () {
-//     let fillpathEachElem = [];
-//     pathsArr.forEach( item => {
-//         const fillpath = item.getAttribute('fill');
-//         console.log(fillpath)
-//         const fillpathArr = new Array();
-//         fillpathArr.push(fillpath);
-//         // console.log(fillpathArr[0]);
-        
-//         // item.addEventListener('mouseover', () => {
-//         //     item.setAttribute('fill', 'red')
-//         // })
-//         // item.addEventListener('mouseout', () => {
-//         //     item.setAttribute('fill', fillpath)
-//         // })   
-//         const fillpathEachElem = fillpathArr[0]; 
-//     })
-//     return fillpathEachElem;
-
-// }
+const rectsArrMod = rectsArr.slice(3, 7);
 
 function pathFill () {
     fillpathArr = new Array();
-    let fillEachPath;
 
     pathsArr.forEach( item => {
         let fillpath = item.getAttribute('fill');
         fillpathArr.push(fillpath)
-
     })
-    // console.log(fillpathArr)
-
-    fillpathArr.forEach( fill => {
-        fillEachPath === fill;
-    })
-    return fillEachPath;
+    return fillpathArr;
 }
-pathFill ();
 
-function rectMouseover (item) {
+function rectMouseover (item, index) {
     item.addEventListener('mouseover', () => {
  
-        pathsArr.forEach( item => {
-            item.setAttribute('fill', 'red');
+        pathsArr.forEach( (item, i) => {
+            if (index === i) {
+                item.setAttribute('fill', '#c40808');
+            }
         })
     })
 }
@@ -81,16 +54,20 @@ function rectMouseout (item) {
         })
     })
 }
+pathsArr.forEach( (item, index) => {
 
-rectsArr.forEach( item => {
+    item.style.cursor = 'pointer';
+
+    rectMouseover(item, index);
+    rectMouseout(item);
+})
+rectsArrMod.forEach( (item, index) => {
     const fill = item.getAttribute('fill');
-    if(fill !== "url(#pattern2)") {
-        item.style.cursor = 'pointer';
+ 
+    item.style.cursor = 'pointer';
 
-        rectMouseover(item);
-        rectMouseout(item);
-    }
-
+    rectMouseover(item, index);
+    rectMouseout(item);
 
     item.addEventListener('click', () => {
         switch (fill) {
@@ -110,25 +87,6 @@ rectsArr.forEach( item => {
                                     `
                 break;
             case "url(#pattern4)":
-                cityImages[0].src = './img/ideal-location/Nicosia/map_card_Nicosia_image_1.jpg'
-                cityImages[1].src = './img/ideal-location/Nicosia/map_card_Nicosia_image_2.jpg'
-                cityImages[2].src = './img/ideal-location/Nicosia/map_card_Nicosia_image_3.jpg'
-
-                cityName.innerHTML = 'Nicosia'
-
-                cityDesc.innerHTML = `
-                                        Also known as Lefkosia, Nicosia is the capital city of Cyprus and the only divided capital city
-                                        in the world. The unique urban scenery is built upon a rich historical past and its mixture with modern lifestyle.
-                                        <br><br>
-                                        It is in close proximity to every other city
-                                        in Cyprus, giving residents the flexibility
-                                        of choosing to enjoy the breathtaking views from the mountain tops and soothing beaches of the coastal cities within minutes. 
-                                        <br><br>
-                                        Nicosia has become an attractive cosmopolitan city made of diverse cultural communities, excellent healthcare facilities and every aspect one requires to build the lifestyle
-                                        of your dreams.
-                                    `
-                break;
-              case "url(#pattern4)":
                 cityImages[0].src = './img/ideal-location/Nicosia/map_card_Nicosia_image_1.jpg'
                 cityImages[1].src = './img/ideal-location/Nicosia/map_card_Nicosia_image_2.jpg'
                 cityImages[2].src = './img/ideal-location/Nicosia/map_card_Nicosia_image_3.jpg'
